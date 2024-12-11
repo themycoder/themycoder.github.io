@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+.container{
+    height: 600px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header{
+    background-color: black;
+    color: azure;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+}
+.footer{
+
+        background-color: black;
+        color: azure;
+        height: 30px;
+        padding: 5px;
+        text-align: center;
+}
+.content{
+    height: 560px;
+    display: flex;
+    flex-direction: row;
+}
+.sliderbar{
+    padding: 20px;
+    flex: 1;
+    background-color: rgb(192, 191, 190);
+}
+.main_content{
+    padding: 20px;
+    flex: 5;
+}

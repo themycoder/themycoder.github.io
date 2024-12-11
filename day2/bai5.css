@@ -1,0 +1,56 @@
+body{
+    padding: 10px 50px 10px 50px;
+}
+.head{
+    
+    background-color: aqua;
+    border: solid black;
+    padding: 10px 10px 10px 10px ;
+    align-items: center;
+    height: 50px;
+}
+.bbody{
+    margin-top: 10px;
+    height: 300px;
+    background-color: aqua;
+    border: solid black;
+    padding: 10px 10px 10px 10px ;
+}
+.tail{
+    margin-top: 10px;
+    height: 20px;
+    background-color: aqua;
+    border: solid black;
+    padding: 10px 10px 10px 10px ;
+}
+.cha{
+    background-color: rgb(109, 109, 182);
+    width: 20%;
+    float: left;
+    padding-left: 10px;
+}
+.chu{
+    padding: 2px 2px 2px 2px;
+    width: 40%;
+    height: 100%;
+    border: solid;
+    background-color: brown;
+
+   width: auto; 
+   float: right;
+   height:70%;
+}
+.con1{
+    background-color: aquamarine;
+    width: 50px;
+    float: left;
+    height: 100%;
+  
+    
+}
+.con2{
+    background-color: blue;
+    float: right;
+    width: 50px;
+    height: 100%;
+}

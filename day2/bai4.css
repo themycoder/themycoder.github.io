@@ -1,0 +1,82 @@
+.box_parent{
+    background-color: rgb(190, 186, 186);
+    height: 900px;
+}
+.box_child1{
+
+    height: 50px;
+    width: 140px;
+background-color: bisque;
+border: solid;
+text-align: center;
+position: relative;
+left: 600px;
+top: 300px;
+
+}
+.box_child2{
+
+    height: 50px;
+    width: 140px;
+background-color: rgb(200, 255, 196);
+border: solid;
+text-align: center;
+position: relative;
+left: 600px;
+top: 340px;
+}
+.box_child3{               
+
+    height: 50px;
+    width: 140px;
+background-color: rgb(255, 196, 250);
+border: solid;
+text-align: center;
+position: relative;
+left: 600px;
+top: 100px;
+}
+.box_child4{
+
+    height: 50px;
+    width: 140px;
+background-color: rgb(255, 196, 214);
+border: solid;
+text-align: center;
+position: relative;
+left: 800px;
+top: 100px;
+}
+.box_child5{
+
+    height: 50px;
+    width: 140px;
+background-color: rgb(244, 255, 196);
+border: solid;
+text-align: center;
+position: relative;
+left: 400px;
+top: 40px;
+}
+.box_child6{
+
+    height: 50px;
+    width: 140px;
+background-color: rgb(196, 255, 239);
+border: solid;
+text-align: center;
+position: relative;
+left: 400px;
+top: 70px;
+}
+.box_child7{
+
+    height: 50px;
+    width: 140px;
+background-color: rgb(196, 217, 255);
+border: solid;
+text-align: center;
+position: relative;
+left: 800px;
+top: 20px;
+}

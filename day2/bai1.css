@@ -1,0 +1,16 @@
+.blog{
+background-color: rgb(242, 234, 234);
+display: inline-block;
+border: solid rgb(197, 193, 193) ;
+border-radius: 10px;
+padding: 20px 10px 30px 20px;
+}
+img{
+    margin: 5px;
+    height: 400px;
+    width: 600px;
+}
+.image{
+    
+    border: solid rgb(212, 209, 209);
+}
