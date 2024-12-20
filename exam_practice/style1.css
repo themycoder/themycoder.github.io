@@ -1,0 +1,73 @@
+.header {
+    background-color: #fffbeb;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a{
+    text-decoration: none;
+    color: #0c0000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    background-color: lavender;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.categories {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.product-grid img {
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 150px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #fffbeb;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer i {
+    margin-right: 5px;
+}
+
+.discount {
+    color: red;
+    font-weight: bold;
+}
+.color-picker-container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.comment {
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    border: 1px solid #ddd;   /* Viền nhẹ */
+}
+
+.comment img {
+    border: 2px solid #eee;   /* Viền cho ảnh đại diện */
+}
+
+.comment .text-warning {
+    font-size: 16px;          /* Kích thước sao đánh giá */
+}
+
+

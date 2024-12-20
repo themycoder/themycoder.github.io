@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+   
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <div class="logo-circle"></div>
+                <h5>My Shop</h5>
+            </div>
+            <nav>
+                <a href="#" class="me-3">Home</a>
+                <a href="#" class="me-3">About us</a>
+                <a href="#" class="me-3">Contact</a>
+                <button class="btn btn-outline-dark btn-info">My Cart (0)</button>
+            </nav>
+        </div>
+    
+        <!-- Main Layout -->
+        <div class="container mt-2">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-2">
+                    <div class="categories">
+                        <h6>Categories</h6>
+                        <div>
+                            <input type="checkbox" checked> Devices <br>
+                            <input type="checkbox" > Funitures <br>
+                            <input type="checkbox" > Cloths <br>
+                            <input type="checkbox" > Foods & Drink <br>
+                            <input type="checkbox" > Materials <br>
+                            <input type="checkbox" > Computers <br>
+                        </div>
+                        <button class="btn btn-sm btn-primary mt-2">Show more ...</button>
+                    </div>
+                </div>
+    
+                <!-- Content Area -->
+                <div class="col-md-10">
+                    <!-- Search and Dropdown -->
+                    <div class="d-flex justify-content-between mb-3">
+                       <div class="d-flex align-items-center border rounded pe-3">
+                              <input type="text" class="form-control me-2  border-0" placeholder="Enter keyword to search">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                              </svg>
+                        </div>
+
+                        <div>
+                            <select class="form-select d-inline w-auto me-1">
+                                <option>Sort by</option>
+                                <option>Price</option>
+                                <option>Newest</option>
+                            </select>
+                            <select class="form-select d-inline w-auto">
+                                <option>Order by</option>
+                                <option>Ascending</option>
+                                <option>Descending</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <!-- Product Grid -->
+                    <div class="row product-grid">
+                        <!-- Product Item -->
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <img src="#" alt="Product Image">
+                            <p><strong>Lorem ipsum dolor</strong></p>
+                            <div class="col d-flex justify-content-between">
+                                <div><p class="text-primary"><em>$129.01</em></p></div>
+                                <div><p class="discount">↓ 10%</p></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <img src="#" alt="Product Image">
+                            <p><strong>Lorem ipsum dolor</strong></p>
+                            <div class="col d-flex justify-content-between">
+                                <div><p class="text-primary"><em>$129.01</em></p></div>
+                                <div><p class="discount">↓ 10%</p></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <img src="#" alt="Product Image">
+                            <p><strong>Lorem ipsum dolor</strong></p>
+                            <div class="col d-flex justify-content-between">
+                                <div><p class="text-primary"><em>$129.01</em></p></div>
+                                <div><p class="discount">↓ 10%</p></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <img src="#" alt="Product Image">
+                            <p><strong>Lorem ipsum dolor</strong></p>
+
+                            <div class="col d-flex justify-content-between">
+                                <div><p class="text-primary"><em>$129.01</em></p></div>
+                                <div><p class="discount">↓ 10%</p></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <img src="#" alt="Product Image">
+                            <p><strong>Lorem ipsum dolor</strong></p>
+                            <div class="col d-flex justify-content-between">
+                                <div><p class="text-primary"><em>$129.01</em></p></div>
+                                <div><p class="discount">↓ 10%</p></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <img src="#" alt="Product Image">
+                            <p><strong>Lorem ipsum dolor</strong></p>
+                            <div class="col d-flex justify-content-between">
+                                <div><p class="text-primary"><em>$129.01</em></p></div>
+                                <div><p class="discount">↓ 10%</p></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Pagination -->
+                    <nav>
+                        <ul class="pagination justify-content-start">
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">50</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <div class="footer mt-4 ">
+             <div class="row">
+            <div class="col-12 d-flex flex-row justify-content-start align-items-center">
+                <!-- Các thành phần footer căn trái -->
+                <h4 class="mb-0">My Shop </h4> 
+                
+                
+            </div>
+             <div class="col-12 d-flex flex-row justify-content-start align-items-center">
+            
+                <p>
+                <i class="bi bi-geo-alt"></i> 22C Somewhere, Ha Noi &nbsp; | &nbsp;
+                <i class="bi bi-telephone"></i> 09876543210
+                </p>
+                
+            </div>
+        </div>
+      
+            
+            
+         
+            
+        </div>
+    
+        <!-- Bootstrap JS Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
