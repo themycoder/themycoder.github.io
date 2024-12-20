@@ -10,18 +10,61 @@
     color: #0c0000;
 }
 
+
 .logo {
     display: flex;
     align-items: center;
 }
 
 .logo-circle {
-    width: 40px;
-    height: 40px;
-    background-color: lavender;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
     border-radius: 50%;
     margin-right: 10px;
 }
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background: white;
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: block;
+    }
+  
+  
+  
+}
+
+
+
 
 .categories {
     border: 1px solid #ddd;
