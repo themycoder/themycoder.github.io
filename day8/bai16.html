@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+n = parseInt(prompt("Nhập n: "));
+let isPrime = true;
+let p = 2;
+if (n < 2) {
+    isPrime = false;
+}
+while (p <= Math.sqrt(n)) {
+    if (n % p === 0) {
+        isPrime = false;
+        break;
+    }
+    p++;
+}
+if (isPrime) {
+    alert(`${n} là số nguyên tố`);
+} else {
+   alert(`${n} không phải là số nguyên tố`);
+}
+    </script>
+</body>
+</html>

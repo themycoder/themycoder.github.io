@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Nhập dãy số s và n
+let s = prompt("Nhập dãy số s, cách nhau bởi dấu ',':").split(',').map(Number);
+let n = Number(prompt("Nhập số n:"));
+
+// Bình phương các phần tử trong dãy
+let sSquared = s.map(x => x ** 2);
+console.log("Dãy số mới (bình phương):", sSquared);
+
+// Các số >= n
+let greaterOrEqualN = s.filter(x => x >= n);
+console.log("Các số >= n:", greaterOrEqualN);
+
+// Số đầu tiên bằng n
+let firstEqualN = s.find(x => x === n);
+console.log("Số đầu tiên bằng n:", firstEqualN);
+
+    </script>
+</body>
+</html>

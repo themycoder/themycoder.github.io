@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        n = parseInt(prompt("Nhập n (n >= 2): "));
+let sumS = 0;
+let k = 1;
+while (k <= n) {
+    sumS += 1 / (k * (k + 1));
+    k++;
+}
+alert(`Giá trị biểu thức S: ${sumS}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// Mảng chuỗi s và chuỗi text
+let s = ["apple", "banana", "cherry", "date", "fig", "grape"];
+let text = prompt("Nhập vào chuỗi text:");
+
+// Tìm chuỗi đầu tiên có độ dài nhỏ nhất
+let minLengthStr = s.reduce((min, str) => (str.length < min.length ? str : min), s[0]);
+console.log("Chuỗi đầu tiên có độ dài nhỏ nhất:", minLengthStr);
+
+// Chuỗi chứa text
+let containsText = s.filter(str => str.includes(text));
+console.log("Chuỗi chứa text:", containsText);
+
+// Mảng mới với 3 ký tự đầu tiên
+let newS = s.map(str => str.slice(0, 3));
+console.log("Mảng mới với 3 ký tự đầu tiên:", newS);
+
+// Tạo chuỗi kết hợp các phần tử
+let joinedString = s.join('-');
+console.log("Chuỗi kết hợp:", joinedString);
+
+</script>
+</body>
+</html>

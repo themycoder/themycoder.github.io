@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Khai báo mảng số
+let arr = [12, 3, 15, 20, 2, 6, 8, 25];
+
+// Tích các phần tử
+let product = arr.reduce((acc, num) => acc * num, 1);
+console.log("Tích của các phần tử:", product);
+
+// Số nhỏ nhất chia hết cho 2
+let minDivisible2 = Math.min(...arr.filter(x => x % 2 === 0));
+console.log("Số nhỏ nhất chia hết cho 2:", minDivisible2);
+
+// Số lớn nhất chia hết cho 3
+let maxDivisible3 = Math.max(...arr.filter(x => x % 3 === 0));
+console.log("Số lớn nhất chia hết cho 3:", maxDivisible3);
+
+// Giá trị trung bình
+let average = arr.reduce((acc, num) => acc + num, 0) / arr.length;
+console.log("Giá trị trung bình:", average);
+
+// Lọc ra số nguyên tố
+function isPrime(num) {
+  if (num < 2) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+let primes = arr.filter(isPrime);
+console.log("Các số nguyên tố:", primes);
+
+// Kiểm tra số nhỏ hơn 10
+let hasLessThan10 = arr.some(x => x < 10);
+console.log("Có số nhỏ hơn 10:", hasLessThan10);
+
+// Kiểm tra tất cả lớn hơn 20
+let allGreaterThan20 = arr.every(x => x > 20);
+console.log("Tất cả lớn hơn 20:", allGreaterThan20);
+
+// Nhập số n cho đến khi n trong mảng
+let n;
+do {
+  n = Number(prompt("Nhập số n:"));
+} while (!arr.includes(n));
+console.log("Số n đã có trong mảng!");
+
+// Sắp xếp tăng dần (Bubble Sort)
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr.length - i - 1; j++) {
+    if (arr[j] > arr[j + 1]) {
+      [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+    }
+  }
+}
+console.log("Mảng sau khi sắp xếp:", arr);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        n = parseInt(prompt("Nhập n: "));
+let count = 0;
+let div = 1;
+while (div <= n) {
+    if (n % div === 0) {
+        count++;
+    }
+    div++;
+}
+alert(`Số ước của ${n}: ${count}`);
+    </script>
+</body>
+</html>

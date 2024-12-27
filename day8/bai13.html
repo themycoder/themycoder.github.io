@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let a = parseInt(prompt("Nhập a: "));
+let b = parseInt(prompt("Nhập b: "));
+let x = parseInt(prompt("Nhập x: "));
+let found = false;
+while (a <= b) {
+    if (a % x === 0) {
+        alert(`Số nhỏ nhất chia hết cho ${x} trong khoảng [a, b]: ${a}`);
+        found = true;
+        break;
+    }
+    a++;
+}
+if (!found) {
+   alert(`Không tìm thấy số nào chia hết cho ${x}`);
+}
+
+    </script>
+</body>
+</html>
