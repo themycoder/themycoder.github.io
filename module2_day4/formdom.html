@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form DOM và Event</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, button {
+            padding: 8px;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        .output {
+            margin-top: 20px;
+        }
+        .output span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Nhập thông tin</h2>
+        <label for="fullName">Họ tên:</label>
+        <input type="text" id="fullName" placeholder="Nhập họ tên">
+
+        <label for="birthYear">Năm sinh:</label>
+        <input type="number" id="birthYear" placeholder="Nhập năm sinh">
+
+        <label for="gender">Giới tính:</label>
+        <select id="gender">
+            <option value="" disabled selected>Chọn giới tính</option>
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+        </select>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" placeholder="Nhập số điện thoại">
+
+        <button id="submitBtn">Hiển thị thông tin</button>
+        <p class="error" id="errorMsg"></p>
+    </div>
+
+    <div class="output" id="output">
+        <h3>Thông tin bạn vừa nhập:</h3>
+        <p>Họ tên: <span id="outputName"></span></p>
+        <p>Năm sinh: <span id="outputBirthYear"></span></p>
+        <p>Tuổi: <span id="outputAge"></span></p>
+        <p>Giới tính: <span id="outputGender"></span></p>
+        <p>Số điện thoại: <span id="outputPhone"></span></p>
+    </div>
+
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function () {
+            const fullName = document.getElementById("fullName").value.trim();
+            const birthYear = document.getElementById("birthYear").value.trim();
+            const gender = document.getElementById("gender").value;
+            const phone = document.getElementById("phone").value.trim();
+            const errorMsg = document.getElementById("errorMsg");
+            const output = document.getElementById("output");
+
+            errorMsg.textContent = ""; 
+            let currentYear = new Date().getFullYear();
+
+            if (!fullName || !birthYear || !gender || !phone) {
+                errorMsg.textContent = "Vui lòng nhập đầy đủ thông tin.";
+                output.style.display = "none";
+                return;
+            }
+
+            if (isNaN(birthYear) || birthYear < 1900 || birthYear > currentYear) {
+                errorMsg.textContent = "Năm sinh không hợp lệ.";
+                output.style.display = "none";
+                return;
+            }
+
+            const age = currentYear - birthYear;
+            document.getElementById("outputName").textContent = fullName;
+            document.getElementById("outputBirthYear").textContent = birthYear;
+            document.getElementById("outputAge").textContent = age;
+            document.getElementById("outputGender").textContent = gender;
+            document.getElementById("outputPhone").textContent = phone;
+
+            output.style.display = "block";
+        });
+    </script>
+</body>
+</html>
