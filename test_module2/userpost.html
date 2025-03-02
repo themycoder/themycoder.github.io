@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Users & Posts</title>
+    <link rel="stylesheet" href="userpost.css">
+</head>
+<body>
+    <h2>Đăng nhập</h2>
+    <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" >
+        <input type="password" id="loginPassword" placeholder="Mật khẩu" >
+        <button type="submit">Đăng nhập</button>
+    </form>
+    <p id="loginMessage"></p>
+
+    <h2>Đăng ký</h2>
+    <form id="registerForm">
+        <input type="text" id="firstName" placeholder="Họ" >
+        <input type="text" id="lastName" placeholder="Tên" >
+        <input type="email" id="registerEmail" placeholder="Email" >
+        <input type="password" id="registerPassword" placeholder="Mật khẩu" >
+        <button type="submit">Đăng ký</button>
+    </form>
+    <p id="registerMessage"></p>
+
+<h2>Danh sách Users</h2>
+<input type="text" id="searchUser" placeholder="Tìm kiếm users">
+<button id="searchUserBtn">Tìm</button>
+<ul id="userList" class="list"></ul>
+
+    <h2>Danh sách Posts</h2>
+    <ul id="postList"></ul>
+
+
+
+<h2>Xem chi tiết Post</h2>
+<input type="number" id="postId" placeholder="Nhập ID bài viết">
+<button id="viewPostBtn">Xem</button>
+<p id="postDetail" class="message"></p>
+<h2>Tìm kiếm bài viết theo Email</h2>
+<input type="email" id="searchPostEmail" placeholder="Nhập email người đăng">
+<button id="searchPostBtn">Tìm</button>
+<ul id="searchPostList" class="list"></ul>
+
+<script type="module" src="userposst.js"></script>
+
+</body>
+</html>
